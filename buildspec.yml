@@ -1,0 +1,19 @@
+version: 0.2
+
+  pre_build:
+    commands:
+      - echo "Starting the pre-build phase..."
+    
+  build:
+    commands:
+      - echo "Compiling and packaging the Spring Boot API..."
+      - mvn clean package
+
+  post_build:
+    commands:
+      - echo "Build completed successfully on $(date)"
+
+artifacts:
+  files:
+    - 'target/*.jar'
+  discard-paths: yes
