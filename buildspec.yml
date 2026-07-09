@@ -16,5 +16,5 @@ phases:
 
 artifacts:
   files:
-    - target/empapi.jar
+    - target/emsapi.jar
   discard-paths: yes
