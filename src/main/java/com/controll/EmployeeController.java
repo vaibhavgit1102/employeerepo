@@ -13,6 +13,6 @@ public class EmployeeController {
 	
 	@GetMapping("/employees")
 	public List<String> getNames(){
-		return List.of("AJAY","Vijay","Sujay");
+		return List.of("AJAY","Vijay","Sujay","Amol");
 	}
 }
